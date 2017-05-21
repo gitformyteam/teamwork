@@ -40,7 +40,7 @@
 	<!-- 事物处理 -->
 	<aop:config>
 		<aop:pointcut id="pc"
-			expression="execution(* cn.jon.crm.core.service..*(..))" />
+			expression="execution(* cn.jon.crm.core.service..*.*(..))" />
 		<aop:advisor pointcut-ref="pc" advice-ref="txAdvice" />
 	</aop:config>
 

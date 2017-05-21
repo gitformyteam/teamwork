@@ -8,8 +8,19 @@
 	<properties>
 		<spring-version>4.3.4.RELEASE</spring-version>
 		<mybatis-version>3.2.8</mybatis-version>
-	</properties>
+		<jackson.version>2.5.4</jackson.version>
+	</properties>	
 	<dependencies>
+	<dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-core</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
 		<dependency>
 			<groupId>javaee</groupId>
 			<artifactId>javaee-api</artifactId>

@@ -4,7 +4,11 @@ import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
-
+/**
+ * 
+ * @author Jon_China
+ *
+ */
 public class BeanUtil implements ApplicationContextAware{
 	 private static ApplicationContext applicationContext;
 

@@ -3,7 +3,7 @@
 <mapper namespace="cn.jon.crm.core.dao.IUserDao">    
 	<sql id="userColumns">
 		id,
-		name,
+		uname,
 		pwd,
 		tel,
 		address
@@ -19,7 +19,7 @@
 				and id=#{id}
 			</if>
 			<if test="name != null">
-				and name=#{name}
+				and uname=#{name}
 			</if>
 			<if test="offset != null and  limit != null">	
 			    ORDER BY id asc limit #{offset} , #{limit}
@@ -29,7 +29,7 @@
 	
    <insert id="saveUser" parameterType="java.util.Map" useGeneratedKeys="true" flushCache="false">
        insert into user (
-           name,
+           uname,
            address
        ) values (
            #{name},
@@ -48,7 +48,7 @@
 	
     <update id="updateUser" parameterType="cn.jon.crm.core.entity.User">
         update  user SET
-           name=#{name},
+           uname=#{name},
            address=#{address}
         WHERE id=#{id}  
     </update>   
